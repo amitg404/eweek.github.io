@@ -55,7 +55,9 @@
             margin: 2rem auto;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-
+        [data-theme="dark"] .timeline-nav {
+    background: rgba(26, 26, 26, 0.9) !important;
+}
         .timeline-nav .nav-link {
             color: var(--secondary-color);
             font-weight: 500;
@@ -64,7 +66,6 @@
         }
 
         .timeline-nav .nav-link.active {
-            background: var(--primary-color);
             color: white !important;
         }
 
@@ -113,7 +114,18 @@
             background: transparent !important;
             padding: 1rem 2rem;
         }
+        [data-theme="dark"] .navbar.scrolled .navbar-brand img {
+            filter: invert(1) hue-rotate(180deg);
+            }
 
+            .navbar.scrolled .nav-link {
+    color: var(--text-color) !important;
+}
+
+.navbar.scrolled .navbar-brand img {
+    filter: invert(0) hue-rotate(0deg);
+}
+    
         .navbar.scrolled {
             background: var(--background-color) !important;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
